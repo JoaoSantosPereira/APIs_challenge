@@ -1,0 +1,17 @@
+O que é uma API REST?___________________________________________________________________________________________
+API  → Application Programming Interface 
+REST → Representatiional State Transfer
+Plataforma de comunicação entre back-end e front-end via URL e 
+################################################################################################################
+
+Qual a diferença entre GET e POST?______________________________________________________________________________
+Get serve para leitura/consulta de dados
+POST serve para submeter ou criar dados, diferente de put que substitui e patch que altera dados no recurso 
+################################################################################################################
+
+Para que serve o código HTTP 404? E o 500?_____________________________________________________________________
+404 - Not found
+   > Reporta recurso não encontrado.
+500 - Internal server error
+   > Reporta um erro da parte do servidor, sendo 00 é o mais generalista não indicando a especificidade do erro.
+################################################################################################################
