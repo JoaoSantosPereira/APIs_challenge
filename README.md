@@ -5,8 +5,8 @@ Desafio Accenture
 
   1. Criar uma API com Flask
     Cria uma API com os seguintes endpoints:
-    GET /ping → deve retornar { "message": "pong" }
-    POST /echo → recebe um JSON com um campo text e retorna o mesmo texto
+      - GET /ping → deve retornar { "message": "pong" }
+      - POST /echo → recebe um JSON com um campo text e retorna o mesmo texto
   Exemplo:
     bash
     CopyEdit
@@ -19,13 +19,12 @@ Desafio Accenture
       curl https://api.chucknorris.io/jokes/random
     Depois, extrai e imprime só o texto da piada (campo value) usando jq ou Python.
 
-  4. Explica com palavras tuas
-    O que é uma API REST?
-    Qual a diferença entre GET e POST?
-    Para que serve o código HTTP 404? E o 500?
+  4. Explica com palavras tuas:
+     - O que é uma API REST?
+     - Qual a diferença entre GET e POST?
+     - Para que serve o código HTTP 404? E o 500?
 
-
-# INTERMEDIÁRIO#
+# INTERMEDIÁRIO #
 
   4. API de Tarefas (ToDo)
     Cria uma API simples para gerenciar tarefas, com:
@@ -57,5 +56,5 @@ Desafio Accenture
 
   9. Testes automáticos
     Cria testes unitários para os endpoints da tua API usando pytest:
-    Testar se GET /ping retorna status 200
-    Testar se POST /tasks funciona com dados válidos
+      - Testar se GET /ping retorna status 200
+      - Testar se POST /tasks funciona com dados válidos
