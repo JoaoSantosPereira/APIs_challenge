@@ -1,6 +1,6 @@
 Desafio Accenture
 
-# BÁSICO – Criar e consumir APIs #
+# BÁSICO #
 
 
   1. Criar uma API com Flask
@@ -25,24 +25,24 @@ Desafio Accenture
     Para que serve o código HTTP 404? E o 500?
 
 
-# INTERMEDIÁRIO – Criar uma mini-API CRUD #
+# INTERMEDIÁRIO#
 
   4. API de Tarefas (ToDo)
     Cria uma API simples para gerenciar tarefas, com:
-      >GET /tasks – lista todas as tarefas
-      >POST /tasks – adiciona nova tarefa
-      >PUT /tasks/<id> – edita tarefa
-      >DELETE /tasks/<id> – apaga tarefa
+      - GET /tasks – lista todas as tarefas
+      - POST /tasks – adiciona nova tarefa
+      - PUT /tasks/<id> – edita tarefa
+      - DELETE /tasks/<id> – apaga tarefa
     Tarefa = objeto com { "id": int, "title": str, "done": bool }
 
-  5. Validação de dados
+  6. Validação de dados
     Adiciona validações no POST /tasks:
     title deve ser obrigatório e com pelo menos 3 letras
     done deve ser true ou false
     Se os dados forem inválidos, responde com 400 Bad Request.
 
 
-# AVANÇADO – Autenticação e integração #
+# AVANÇADO  #
 
   6. Autenticação com token
     Adiciona um middleware na tua API:
