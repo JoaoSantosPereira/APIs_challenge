@@ -1,7 +1,6 @@
 Desafio Accenture
 
-# BÁSICO #
-
+# BÁSICO 
 
   1. Criar uma API com Flask
     Cria uma API com os seguintes endpoints:
@@ -24,7 +23,7 @@ Desafio Accenture
      - Qual a diferença entre GET e POST?
      - Para que serve o código HTTP 404? E o 500?
 
-# INTERMEDIÁRIO #
+# INTERMEDIÁRIO
 
   4. API de Tarefas (ToDo)
     Cria uma API simples para gerenciar tarefas, com:
@@ -41,7 +40,7 @@ Desafio Accenture
     Se os dados forem inválidos, responde com 400 Bad Request.
 
 
-# AVANÇADO  #
+# AVANÇADO
 
   6. Autenticação com token
     Adiciona um middleware na tua API:
