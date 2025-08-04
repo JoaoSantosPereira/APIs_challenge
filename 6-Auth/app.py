@@ -22,11 +22,14 @@ def check_auth():
 
 def require_auth(f):
     @wraps(f)
-    def wrapper(*args,**kwargs):
-        token= request.headers.get('Authorization','').replace('Bearer','')
-        if token!= "secrettoken123":
-            return jsonify({'error': 'Unauthorized'}), 401 # Unauthorized
-        return f(*args,**kwargs)
+    def wrapper(*args, **kwargs):
+        auth_header = request.headers.get('Authorization', '')
+        if not auth_header.startswith('Bearer '):
+            return jsonify({'error': 'Missing or invalid Authorization header'}), 401
+        token = auth_header.split(' ')[1]
+        if token != "secrettoken123":
+            return jsonify({'error': 'Unauthorized'}), 401
+        return f(*args, **kwargs)
     return wrapper
 
 @app.route('/ping')
@@ -37,3 +40,6 @@ def ping():
 @require_auth
 def secret():
     return jsonify({'message': 'You are authenticated!'})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
