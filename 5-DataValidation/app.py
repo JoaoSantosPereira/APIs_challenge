@@ -32,7 +32,7 @@ def add_task():
     return jsonify(task), 201
 
 #PUT
-@app.route("/tasks",methods=["PUT"])
+@app.route("/tasks/<int:task_id>", methods=["PUT"])
 def put_task(task_id):
     #Edita uma tarefa existente
     task = next((t for t in tasks if t["id"] == task_id), None)
@@ -52,7 +52,7 @@ def put_task(task_id):
     return jsonify(task), 200
 
 #DELETE
-@app.route("/tasks",methods=["DELETE"])
+@app.route("/tasks/<int:task_id>",methods=["DELETE"])
 def del_task(task_id):
     index = next((i for i, t in enumerate(tasks) if t["id"] == task_id), None)
     if index is None:
@@ -60,3 +60,6 @@ def del_task(task_id):
 
     tasks.pop(index)
     return "No Content", 204
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
