@@ -1,4 +1,4 @@
-Desafio Accenture
+Accenture Challenge Tasks
 
 # BÁSICO 
 
@@ -18,7 +18,7 @@ Desafio Accenture
       curl https://api.chucknorris.io/jokes/random
     Depois, extrai e imprime só o texto da piada (campo value) usando jq ou Python.
 
-  4. Explica com palavras tuas:
+  3. Explica com palavras tuas:
      - O que é uma API REST?
      - Qual a diferença entre GET e POST?
      - Para que serve o código HTTP 404? E o 500?
