@@ -21,7 +21,7 @@ def add_task():
     
     #done status validation
     if "done" not in data or not isinstance(data["done"],bool):
-        return jsonify({"error": "'done' state is mandatory, it must be true or false."}),412
+        return jsonify({"error": "'done' state is mandatory, it must be true or false."}), 412
     #Passing Validations
     task= {
         "id":next_id(),
