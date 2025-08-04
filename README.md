@@ -25,20 +25,22 @@ Accenture Challenge Tasks
 
 # INTERMEDIÁRIO
 
-  4. API de Tarefas (ToDo)
-    Cria uma API simples para gerenciar tarefas, com:
+  4. Cria uma API simples para gerenciar tarefas, com:
       - GET /tasks – lista todas as tarefas
       - POST /tasks – adiciona nova tarefa
       - PUT /tasks/<id> – edita tarefa
       - DELETE /tasks/<id> – apaga tarefa
     Tarefa = objeto com { "id": int, "title": str, "done": bool }
+  
+  ***Docker implemented***
 
-  6. Validação de dados
+  5. Validação de dados *Docker*
     Adiciona validações no POST /tasks:
     title deve ser obrigatório e com pelo menos 3 letras
     done deve ser true ou false
     Se os dados forem inválidos, responde com 400 Bad Request.
-
+  
+  ***Docker  implemented***
 
 # AVANÇADO
 
