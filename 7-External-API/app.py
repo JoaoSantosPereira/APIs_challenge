@@ -4,11 +4,17 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+
 
 app = Flask(__name__)
 
+
+load_dotenv()# Load environment variables from .env file, allows to run outside of Docker
+
 API_KEY = os.getenv('API_KEY')
+if not API_KEY:
+    raise ValueError("API_KEY environment variable not set")
+
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 @app.route("/weather/lisboa")
