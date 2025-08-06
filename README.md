@@ -55,6 +55,8 @@ Adiciona um middleware na tua API:
 7. ### Consumir uma API externa ###
 Cria um endpoint que, ao ser chamado, busque a temperatura atual de Lisboa usando uma API pública como OpenWeatherMap (precisa de API key) e retorne só a temperatura em Celsius.
 
+[***Docker compose implemented***] 
+
 8. ### Documentação com Swagger ###
 Instala o pacote Flasgger e cria a documentação Swagger da tua API com /docs.
 
