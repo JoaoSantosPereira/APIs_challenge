@@ -48,3 +48,6 @@ def ping():
 def echo():
     data = request.get_json()
     return jsonify({'text': data['text']})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
