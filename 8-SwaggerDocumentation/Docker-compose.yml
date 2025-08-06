@@ -6,3 +6,7 @@ services:
     ports:
       - "5000:5000"
     container_name: flask-api
+
+    # docker-compose up --build~
+
+    # docker-compose down
