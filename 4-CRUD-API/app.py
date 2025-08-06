@@ -5,7 +5,7 @@ app = Flask("__main__")
 # mock data
 tasks = [
     {"id": 1, "title": "Creating CRUD API","done": False},
-    {"id": 2, "title": "Estudar Flask","done": True },
+    {"id": 2, "title": "Learning Flask","done": True },
 ]
 
 def next_id():
@@ -26,7 +26,6 @@ def create_task():
         abort(400, description="Body must be JSON.")
 
     data = request.get_json()
-
     
     if "title" not in data:
         abort(400, description=" 'title'field is mandatory!")
