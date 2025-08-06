@@ -2,7 +2,6 @@
 # !!!   Development stage only   !!!
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 version: "3.8"
-
 services:
   flask-api:
     build: .
@@ -11,6 +10,5 @@ services:
     volumes:
       - .:/app  # bind mount: host(pasta atual) -> container(/app)
     container_name: flask-api
-
     # docker-compose -f bindmount-docker-compose.yml up --build
     # docker-compose -f bindmount-docker-compose.yml down
