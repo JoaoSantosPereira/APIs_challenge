@@ -41,7 +41,7 @@ Adiciona validações no POST /tasks:
 
 Se os dados forem inválidos, responde com 400 Bad Request.  
   
-  [***Docker  implemented***]
+  [***Docker  container***]
 
 ## AVANÇADO ##
 
@@ -50,17 +50,21 @@ Adiciona um middleware na tua API:
 - Todos os endpoints devem exigir um header Authorization: Bearer <token>
 - Se o token for diferente de **secrettoken123**, retornar **401 Unauthorized**
 
-[***Docker  implemented***]
+[***Docker  container***]
 
 7. ### Consumir uma API externa ###
 Cria um endpoint que, ao ser chamado, busque a temperatura atual de Lisboa usando uma API pública como OpenWeatherMap (precisa de API key) e retorne só a temperatura em Celsius.
 
-[***Docker compose implemented***] 
+[***Docker  container***]
 
 8. ### Documentação com Swagger ###
 Instala o pacote Flasgger e cria a documentação Swagger da tua API com /docs.
+
+[***Docker  container***]
 
 9. ### Testes automáticos ###
 Cria testes unitários para os endpoints da tua API usando pytest:
 - Testar se GET /ping retorna status 200
 - Testar se POST /tasks funciona com dados válidos
+
+[***Docker  container***]
