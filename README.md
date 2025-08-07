@@ -32,7 +32,7 @@ Depois, extrai e imprime só o texto da piada (campo value) usando jq ou Python.
 - DELETE /tasks/<id> – apaga tarefa
 Tarefa = objeto com { "id": int, "title": str, "done": bool }
   
-  [***Docker  container***]
+[***Docker  container***]
 
 5. ### Validação de dados ###
 Adiciona validações no POST /tasks:
@@ -41,7 +41,7 @@ Adiciona validações no POST /tasks:
 
 Se os dados forem inválidos, responde com 400 Bad Request.  
   
-  [***Docker  container***]
+[***Docker  container***]
 
 ## AVANÇADO ##
 
